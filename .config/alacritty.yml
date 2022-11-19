@@ -14,8 +14,8 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-env:
-  TERM: xterm-24bit
+#env:
+  #TERM: alacritty
 
 #window:
   # Window dimensions (changes require restart)
