@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Commands history
 HISTFILE=~/.cache/zsh_histfile
 HISTSIZE=1000
@@ -9,6 +16,10 @@ bindkey -e
 # Completion
 autoload -U compinit
 compinit
+
+# Fedora modules
+source /etc/profile.d/modules.sh
+module load mpi/openmpi-x86_64
 
 # Clone antidote if necessary
 if ! [[ -e ${ZDOTDIR}/.antidote ]]; then
