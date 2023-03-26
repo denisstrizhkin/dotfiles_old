@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Autostart Scripts
-Exec=autostart
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true
