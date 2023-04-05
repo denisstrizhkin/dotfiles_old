@@ -16,3 +16,10 @@ export VISUAL="emacsclient -c"
 export EDITOR="$VISUAL"
 export TERMINAL=alacritty
 export BROWSER=chromium-browser
+
+# Java
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+if [ $(tty) = "/dev/tty1" ]; then
+	dbus-run-session sway
+fi
