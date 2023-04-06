@@ -20,46 +20,20 @@ set $term foot
 # on the original workspace that the command was run on.
 set $menu exec wofi --show drun
 
-### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/'Konachan.com - 99543 grass japanese_clothes katana moon night onozuka_komachi pink_hair red_eyes scythe sky spear stars sword touhou twintails weapon.jpg' fill
-#
-# Example configuration:
+# Output configuration:
 
 output HDMI-A-1 pos 0    0 res 1920x1080
 output DP-3     pos 1920 0 res 1920x1080 transform 270
 
-# You can get the names of your outputs by running: swaymsg -t get_outputs
-
-### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
-
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
+# Wallpaper
+output * bg ~/'Pictures/Konachan.com - 99543 grass japanese_clothes katana moon night onozuka_komachi pink_hair red_eyes scythe sky spear stars sword touhou twintails weapon.jpg' fill
 
 ### Key bindings
+#
+# Sound:
+#
+    bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+
+    bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-
 #
 # Basics:
 #
