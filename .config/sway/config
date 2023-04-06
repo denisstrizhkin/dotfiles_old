@@ -85,6 +85,13 @@ output DP-3     pos 1920 0 res 1920x1080 transform 270
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
+# Screen capture
+#
+  set $psf $(xdg-user-dir PICTURES)/ps_$(date +"%Y%m%d%H%M%S").png
+  set $ps1 Print
+
+  bindsym $ps1 exec grim -g "$(slurp)" $psf; exec cat $psf | wl-copy
+#
 # Moving around:
 #
     # Move your focus around
