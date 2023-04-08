@@ -17,6 +17,8 @@ bindkey -v
 autoload -U compinit
 compinit
 
+alias ls="ls --color"
+
 # Clone antidote if necessary
 if ! [[ -e ${ZDOTDIR}/.antidote ]]; then
   git clone https://github.com/mattmc3/antidote.git ${ZDOTDIR}/.antidote
