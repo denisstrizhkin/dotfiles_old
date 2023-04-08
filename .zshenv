@@ -11,7 +11,7 @@ export LAMMPS_POTENTIALS="$HOME"/.local/share/lammps/potentials
 export ZDOTDIR="$HOME"/.config/zsh
 
 # Programs
-export VISUAL="nvim"
+export VISUAL="vim"
 export EDITOR="$VISUAL"
 export TERMINAL=foot
 export BROWSER=chromium-browser
