@@ -1,8 +1,8 @@
 all:
-	stow --verbose --restow ./ --target ~
+	stow --verbose --ignore makefile --restow ./ --target ~
 
 delete:
-	stow --verbose --delete ./ --target ~
+	stow --verbose --ignore makefile --delete ./ --target ~
 
 info:
-	stow --verbose --simulate --restow ./ --target ~
+	stow --verbose --ignore makefile --simulate --restow ./ --target ~
