@@ -35,6 +35,13 @@ output * bg ~/'Pictures/Konachan.com - 99543 grass japanese_clothes katana moon 
     bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+
     bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-
 #
+# Language:
+#
+   input type:keyboard {
+	xkb_layout us,ru
+	xkb_options grp:alt_shift_toggle
+   }
+#
 # Basics:
 #
     # Start a terminal
