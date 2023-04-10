@@ -1,3 +1,4 @@
+exec --no-startup-id dbus-update-activation-environment --all
 # Default config for sway
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
@@ -29,11 +30,6 @@ output DP-3     pos 1920 0 res 1920x1080 transform 270
 output * bg ~/'Pictures/Konachan.com - 99543 grass japanese_clothes katana moon night onozuka_komachi pink_hair red_eyes scythe sky spear stars sword touhou twintails weapon.jpg' fill
 
 ### Key bindings
-#
-# Sound:
-#
-    bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%+
-    bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 10%-
 #
 # Language:
 #
