@@ -18,7 +18,7 @@ autoload -U compinit
 compinit
 
 alias ls="ls --color"
-alias notebook="docker run --rm -p 8888:8888 -v $(pwd):/home/jovyan/work jupyter/scipy-notebook"
+alias notebook='docker run --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work jupyter/scipy-notebook'
 
 # Clone antidote if necessary
 if ! [[ -e ${ZDOTDIR}/.antidote ]]; then
