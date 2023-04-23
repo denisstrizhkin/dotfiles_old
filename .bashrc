@@ -40,6 +40,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 alias ls="ls --color"
 alias notebook='docker run --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work jupyter/scipy-notebook'
 alias eix="eix --color always"
+alias lynx="lynx -vikeys"
 
 
 # Use vi keys
