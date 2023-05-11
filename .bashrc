@@ -35,6 +35,8 @@ export BROWSER=chromium
 # Java
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 
 # Aliases
 alias ls="ls --color"

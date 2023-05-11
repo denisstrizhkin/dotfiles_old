@@ -1,4 +1,5 @@
 exec --no-startup-id dbus-update-activation-environment --all
+
 # Default config for sway
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
@@ -27,7 +28,7 @@ output HDMI-A-1 pos 0    0 res 1920x1080
 output DP-3     pos 1920 0 res 1920x1080 transform 270
 
 # Wallpaper
-output * bg ~/'Pictures/Konachan.com - 99543 grass japanese_clothes katana moon night onozuka_komachi pink_hair red_eyes scythe sky spear stars sword touhou twintails weapon.jpg' fill
+output * bg '~/Pictures/Konachan.com - 299352 computer dark green iwakura_lain kensight328 serial_experiments_lain.jpg' fill
 
 # Font
 font pango:"xos4 Terminus" 12px
