@@ -27,21 +27,21 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME"/.local/lib64
 export LAMMPS_POTENTIALS="$HOME"/.local/share/lammps/potentials
 
 # Programs
-export VISUAL="vim"
+export VISUAL="vis"
 export EDITOR="$VISUAL"
 export TERMINAL=foot
-export BROWSER=chromium
+export BROWSER=firefox-bin
 
 # Java
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+# Config home
 export XDG_CONFIG_HOME="$HOME/.config"
 
 
 # Aliases
 alias ls="ls --color"
 alias notebook='docker run --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work jupyter/scipy-notebook'
-alias eix="eix --color always"
 alias lynx="lynx -vikeys"
 
 

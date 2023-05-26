@@ -1,4 +1,6 @@
 exec --no-startup-id dbus-update-activation-environment --all
+exec gentoo-pipewire-launcher
+exec mpd
 
 # Default config for sway
 #
@@ -28,7 +30,7 @@ output HDMI-A-1 pos 0    0 res 1920x1080
 output DP-3     pos 1920 0 res 1920x1080 transform 270
 
 # Wallpaper
-output * bg '~/Pictures/Konachan.com - 299352 computer dark green iwakura_lain kensight328 serial_experiments_lain.jpg' fill
+output * bg '~/Pictures/Konachan.com\ -\ 299352\ computer\ dark\ green\ iwakura_lain\ kensight328\ serial_experiments_lain.jpg' fill
 
 # Font
 font pango:"xos4 Terminus" 12px
@@ -37,10 +39,10 @@ font pango:"xos4 Terminus" 12px
 #
 # Language:
 #
-   input type:keyboard {
-	xkb_layout us,ru
-	xkb_options grp:alt_shift_toggle
-   }
+  input type:keyboard {
+	  xkb_layout us,ru
+	  xkb_options grp:win_space_toggle
+  }
 #
 # Basics:
 #
@@ -207,8 +209,8 @@ set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
     gsettings set $ghome-schema color-scheme prefer-dark
-    gsettings set $gnome-schema gtk-theme 'Arc-Dark'
-    gsettings set $gnome-schema icon-theme 'Adwaita'
+    gsettings set $gnome-schema gtk-theme 'Mint-Y-Dark'
+    gsettings set $gnome-schema icon-theme 'Mint-Y'
     gsettings set $gnome-schema cursor-theme 'Adwaita'
     gsettings set $gnome-schema font-name 'DejaVu Sans'
     fcitx5
