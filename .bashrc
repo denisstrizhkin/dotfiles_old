@@ -45,10 +45,7 @@ alias notebook='docker run --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work jupyt
 alias lynx="lynx -vikeys"
 
 
-# Use vi keys
-set -o vi
-
 # Run sway
 if [ $(tty) = "/dev/tty1" ]; then
-	dbus-run-session sway
+    Hyprland
 fi
