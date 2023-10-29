@@ -16,6 +16,9 @@ fi
 
 
 # Put your fun stuff here.
+# export QT_STYLE_OVERRIDE=adwaita-dark
+export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # PATH
 export PATH="$PATH:$HOME"/.local/bin
@@ -25,12 +28,6 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME"/.local/lib64
 
 # LAMMPS
 export LAMMPS_POTENTIALS="$HOME"/.local/share/lammps/potentials
-
-# Programs
-export VISUAL="vis"
-export EDITOR="$VISUAL"
-export TERMINAL=foot
-export BROWSER=firefox-bin
 
 # Java
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -44,6 +41,7 @@ alias ls="ls --color"
 alias notebook='docker run --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work jupyter/scipy-notebook'
 alias lynx="lynx -vikeys"
 
+set -o vi
 
 # Run sway
 if [ $(tty) = "/dev/tty1" ]; then
