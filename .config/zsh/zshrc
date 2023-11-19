@@ -11,12 +11,9 @@ zstyle ':completion::complete:*' use-cache 1
 # enable auto-correction
 setopt correctall
 
-# enable advanced prompt support
-autoload -U promptinit
-promptinit
-
-# set prompt to gentoo's one
-prompt gentoo
+# prompt
+PS1='%B%F{blue}- %F{green}%n@%M %F{yellow}[%D %T] %F{blue}%d
+%F{blue}- %#%b%f '
 
 # enable history
 export HISTSIZE=2000
