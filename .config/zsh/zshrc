@@ -31,17 +31,10 @@ setopt autocd
 # ls colors
 alias ls="ls --color"
 
-# apply QT theme with qt5ct and qt6ct
-export QT_QPA_PLATFORM=wayland
-export QT_QPA_PLATFORMTHEME=qt5ct
-
 # PATH
 export PATH="$PATH:$HOME"/.local/bin
 
-# Java
-export _JAVA_AWT_WM_NONREPARENTING=1
-
-# Run Hyprland
+# Run Plasma
 if [ $(tty) = "/dev/tty1" ]; then
-    Hyprland
+    startplasma-wayland
 fi
