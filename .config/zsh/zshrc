@@ -43,7 +43,8 @@ setopt autocd
 alias ls="ls --color"
 
 # PATH
-export PATH="$PATH:$HOME"/.local/bin
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # Run Plasma
 if [ $(tty) = "/dev/tty1" ]; then
