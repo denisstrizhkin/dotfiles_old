@@ -9,6 +9,17 @@ alias ls="ls --color"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 
+# DOOM Emacs
+export PATH="$PATH:$HOME/.config/emacs/bin"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# direnv
+eval "$(direnv hook zsh)"
+
 # Run Plasma
 if [ $(tty) = "/dev/tty1" ]; then
     startplasma-wayland
